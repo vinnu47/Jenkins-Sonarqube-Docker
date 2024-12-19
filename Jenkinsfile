@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the code from GitHub repository
-                git 'https://github.com/vinnu47/Jenkins-Sonarqube-Docker.git'
+                git branch: 'main', url: 'https://github.com/vinnu47/Jenkins-Sonarqube-Docker.git'
             }
         }
 
